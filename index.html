@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Olgu Başak">
+    <meta name="description" content="Web design and coding">
+    <meta name="keywords" content="web,design,programming,software,development">
+    <!-- /*SEO için yukarıdakiler önemli */ -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!--  appleda bir sorun yaşanmaması için buraya iconlar eklenir-->
+    <title>New Design</title>
+    <!-- /*Oluşturulan cssler burada eklenir kod kalabalığı engellenir */ -->
+    <style>
+        @import url("css/all.css");
+    </style>
+    <!-- Tüm css dosylarımızı tek bir satır ile import edebiliriz. -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/extra.css">
+    <!-- Live Server hızlıca çalışmadığı için bu şekilde yazılarak hızlandırılır. Site bittikten sonra all.css içine eklenecek -->
+</head>
+<body id="page-body">
+    <!-- navigation start-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        <div class="container">
+            <a href="#page-body" class="navbar-brand text-uppercase" title="new design website link">New Design For Everyone</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar"
+                aria-controls="myNavbar" aria-label="menu on off button" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Yukarıda yapılan ekran küçüldüğünde detaylar için ortaya çıkan çizgiler açılır.  -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel"> 
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="myLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                    <!-- aria-labelledby ekran okuyucular için bağlantılar oluşturulur  ekran okuyucu kullananlara bir açıklama eklenmiş olur-->
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto text-uppercase py-lg-2">
+                        <li class="nav-item"><a href="#services" class="nav-link">Servives</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <!-- büyüyen ve küçülen ekranlar için ayrı işlem basamakları tanımlanır.  -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation end-->
+
+    <!--header start-->
+    <header class="backImage text-white text-center">
+        <div class="container">
+            <div class="backImage-sub mb-4">Welcome Our Studio</div>
+            <div class="backImage-heading text-uppercase">Glad to See You Here</div>
+            <a href="#services" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder"> Learn More</a>
+            <!-- # işareti burayı gördüğündeki yere gider demek, geri kalan bootstrap kalıplarıdan alındı.   -->
+            <!-- backImage sub yazarken bootstrapin bir işlevi yok devreye text-upper case yazıldığında giriyor -->
+
+        </div>
+    </header>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/custom/extra.js"></script>
+    <!-- Hem kendi yazacağımız js dosyalarını hemde bootstrapten alınmış olan dosyalar eklenir -->
+    
+</body>
+</html>
